@@ -1,5 +1,6 @@
 {
   "name": "dvx",
+  "type": "module",
   "version": "1.0.0",
   "description": "Projeto de uma landing-page para a empresa DVX",
   "main": "index.js",
