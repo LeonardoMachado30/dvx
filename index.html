@@ -1,425 +1,645 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="DVX Tecnologias e Soluções e uma empresa voltada para fins tecnologicos, criação e produção de conteudo web e de social media."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="dvx, dvx tecnologia, tecnologia, social media, ranqueamento, soluções tecnologicas"
+    />
 
-  <meta name="robots" content="index, follow">
-  <meta name="description"
-    content="DVX Tecnologias e Soluções e uma empresa voltada para fins tecnologicos, criação e produção de conteudo web e de social media.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-  <meta name="keywords" content="dvx, dvx tecnologia, tecnologia, social media, ranqueamento, soluções tecnologicas" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/globals.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/swipe.css" />
+    <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .swiper {
+        width: 100%;
+        max-width: 1420px;
+        height: 480px;
+        padding: 30px;
+      }
 
-  <link rel="stylesheet" href="public/css/globals.css" />
-  <link rel="stylesheet" href="public/css/style.css" />
-  <link rel="stylesheet" href="public/css/swipe.css" />
-  <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
+      .swiper .swiper-wrapper {
+        height: 400px;
+        margin-inline: 30px;
+      }
 
-  <style>
-    .swiper {
-      width: 100%;
-      max-width: 1420px;
-      height: 480px;
-      padding: 30px;
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto !important;
+        height: auto !important;
+      }
 
-    }
+      .swiper-slide img {
+        display: block;
+        overflow: hidden;
+      }
 
-    .swiper .swiper-wrapper {
-      height: 400px;
-      margin-inline: 30px;
-    }
+      .swiper-pagination {
+        bottom: -6px !important;
+      }
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: auto !important;
-      height: auto !important;
-    }
+      .swiper-pagination-bullet-active {
+        background-color: #fff;
+      }
 
-    .swiper-slide img {
-      display: block;
-      overflow: hidden;
-    }
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: #fff;
+        filter: drop-shadow(5px 5px 5px #222);
+      }
+    </style>
 
-    .swiper-pagination {
-      bottom: -6px !important;
-    }
+    <title>DVX Tecnologia e Soluções</title>
+  </head>
 
-    .swiper-pagination-bullet-active {
-      background-color: #fff
-    }
+  <body>
+    <div class="flex flex-col justify-center relative">
+      <header
+        class="w-full bg-[#3b90e5] text-center flex justify-center --fade-in delay-600"
+      >
+        <img src="public/img/logo.png" alt="logo DVX" loading="lazy" />
+      </header>
 
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: #fff;
-      filter: drop-shadow(5px 5px 5px #222);
-    }
-  </style>
+      <main class="flex flex-col items-center justify-center w-full relative">
+        <section
+          id="main"
+          class="flex flex-wrap justify-center items-center relative w-full h-[750px]"
+        >
+          <div
+            id="container"
+            class="absolute top-0 w-full h-full before:bg-[#c5c5c5c5] before:w-full before:absolute before:h-full before:bg-[url('public/img/effect-bg.png')] before:opacity-80 before:bg-center before:bg-norepeat [&:nth-child(2)]:hidden --fade-in --delay-animation-1"
+          ></div>
 
-  <title>DVX Tecnologia e Soluções</title>
-</head>
-
-<body>
-  <div class="flex flex-col justify-center relative">
-    <header class="w-full bg-[#3b90e5] text-center flex justify-center --fade-in 
-     delay-600">
-      <img src="public/img/logo.png" alt="logo DVX" loading="lazy" />
-    </header>
-
-    <main class="flex flex-col items-center justify-center w-full relative">
-      <section id="main" class="flex flex-wrap justify-center items-center relative w-full h-[750px]">
-        <div id="container"
-          class="absolute top-0 w-full h-full before:bg-[#c5c5c5c5] before:w-full before:absolute before:h-full before:bg-[url('public/img/effect-bg.png')] before:opacity-80 before:bg-center before:bg-norepeat [&:nth-child(2)]:hidden --fade-in --delay-animation-1">
-        </div>
-        <div class="flex flex-col text-white relative max-w-3xl gap-10 p-4">
-          <h1 class="md:text-7xl text-6xl font-bold --fade-in-translateY --delay-animation-2">
-            Soluções para seu
-            <strong class="text-[#3b90e5]">Marketing digital</strong>
-          </h1>
-          <h2 class="md:text-3xl text-1xl --fade-in-translateY --delay-animation-2">
-            Transformando sua presença online em uma obra de arte digital.
-          </h2>
-        </div>
-
-        <img class="relative --fade-in-roman max-w-[600px] " src="public/img/background-roman.png"
-          style="-webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); filter: drop-shadow(0px 200px 60px rgba(0 0 0 / 30%))"
-          alt="Estatua romana com logo da DVX" title="Estatua romana com logo da DVX" loading="lazy" />
-      </section>
-
-      <section id="our-services"
-        class="flex flex-col items-center justify-center relative max-w-[1020px] px-4 py-36 gap-20 md:gap-48">
-        <div class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col-reverse gap-20">
-          <img class="--orbit w-full h-full max-w-[200px] md:max-w-[317px] relative" src="public/img/icon_mobile.png"
-            alt="Icone de celular" loading="lazy" />
-          <div class="flex flex-col gap-4 text-[#3b90e5]">
-            <h4 class="text-4xl font-bold">UI/UX</h4>
-            <p class="text-justify">
-              Oferecemos serviços completos de User Experience (UX) Design, incluindo pesquisa, personas, wireframing e
-              prototipagem para um design eficaz. Na User Interface (UI) Design, focamos em criar interfaces atraentes,
-              considerando design visual, cores, tipografia e elementos para proporcionar uma experiência visualmente
-              agradável e fácil de usar. Nosso objetivo é garantir uma interação intuitiva e satisfatória do usuário com
-              o produto.
-            </p>
+          <div class="flex flex-col text-white relative max-w-3xl gap-10 p-4">
+            <h1
+              class="md:text-7xl text-6xl font-bold --fade-in-translateY --delay-animation-2"
+            >
+              Soluções para seu
+              <strong class="text-[#3b90e5]">Marketing digital</strong>
+            </h1>
+            <h2
+              class="md:text-3xl text-1xl --fade-in-translateY --delay-animation-2"
+            >
+              Transformando sua presença online em uma obra de arte digital.
+            </h2>
           </div>
-        </div>
 
-        <div class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col gap-20">
-          <div class="flex flex-col gap-4 text-[#3b90e5]">
-            <h4 class="text-4xl font-bold">Desenvolvimento de software</h4>
-            <p>
-              Somos especialistas em criação de:
-            </p>
-            <ul class="flex flex-col text-sm">
-              <li>
-                <p>WebPage</p>
-              </li>
-              <li>
-                <p>Landing pages</p>
-              </li>
-              <li>
-                <p>E-commerce e E-Learning</p>
-              </li>
-              <li>
-                <p>Automações</p>
-              </li>
-              <li>
-                <p>ChatBot</p>
-              </li>
-              <li>
-                <p>Desktop App</p>
-              </li>
-              <li>
-                <p>Mobile App</p>
-              </li>
-            </ul>
+          <img
+            class="relative --fade-in-roman max-w-[600px] w-full"
+            src="public/img/background-roman.png"
+            style="
+              -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
+              filter: drop-shadow(0px 200px 60px rgba(0 0 0 / 30%));
+            "
+            alt="Estatua romana com logo da DVX"
+            title="Estatua romana com logo da DVX"
+            loading="lazy"
+          />
+        </section>
+
+        <section
+          id="our-services"
+          class="flex flex-col items-center justify-center relative max-w-[1020px] px-4 py-36 gap-20 md:gap-48"
+        >
+          <div
+            class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col-reverse gap-20"
+          >
+            <img
+              class="--orbit w-full h-full max-w-[200px] md:max-w-[317px] relative"
+              src="public/img/icon_mobile.png"
+              alt="Icone de celular"
+              loading="lazy"
+            />
+            <div class="flex flex-col gap-4 text-[#3b90e5]">
+              <h4 class="text-4xl font-bold">UI/UX</h4>
+              <p class="text-justify">
+                Oferecemos serviços completos de User Experience (UX) Design,
+                incluindo pesquisa, personas, wireframing e prototipagem para um
+                design eficaz. Na User Interface (UI) Design, focamos em criar
+                interfaces atraentes, considerando design visual, cores,
+                tipografia e elementos para proporcionar uma experiência
+                visualmente agradável e fácil de usar. Nosso objetivo é garantir
+                uma interação intuitiva e satisfatória do usuário com o produto.
+              </p>
+            </div>
           </div>
-          <img class="--orbit w-full h-full max-w-[300px] md:max-w-[450px] relative" src="public/img/icon_monitor.png"
-            alt="Icone de computador" loading="lazy" />
-        </div>
 
-        <div class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col-reverse gap-20">
-          <img class="--orbit w-full h-full max-w-[300px] md:max-w-[400px] relative"
-            src="public/img/vectary-texture-1.png" alt="Icone de media social" loading="lazy" />
-          <div class="flex flex-col gap-4 text-[#3b90e5]">
-            <h4 class="text-4xl font-bold">Branding e Social Media</h4>
-            <p class="text-justify">
-              Somos especializados em Branding e Social Media, fornecendo serviços para construir e promover a
-              identidade de sua marca de maneira impactante. No Branding, desenvolvemos estratégias que definem a
-              personalidade, valores e missão da sua marca, criando uma presença única no mercado. Nossa equipe de
-              Social Media se dedica a ampliar o alcance da sua marca nas redes sociais, implementando estratégias de
-              conteúdo envolvente e gerenciando contas para garantir uma presença ativa e interativa.
-            </p>
+          <div
+            class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col gap-20"
+          >
+            <div class="flex flex-col gap-4 text-[#3b90e5]">
+              <h4 class="text-4xl font-bold">Desenvolvimento de software</h4>
+              <p>Somos especialistas em criação de:</p>
+              <ul class="flex flex-col text-sm">
+                <li>
+                  <p>WebPage</p>
+                </li>
+                <li>
+                  <p>Landing pages</p>
+                </li>
+                <li>
+                  <p>E-commerce e E-Learning</p>
+                </li>
+                <li>
+                  <p>Automações</p>
+                </li>
+                <li>
+                  <p>ChatBot</p>
+                </li>
+                <li>
+                  <p>Desktop App</p>
+                </li>
+                <li>
+                  <p>Mobile App</p>
+                </li>
+              </ul>
+            </div>
+            <img
+              class="--orbit w-full h-full max-w-[300px] md:max-w-[450px] relative"
+              src="public/img/icon_monitor.png"
+              alt="Icone de computador"
+              loading="lazy"
+            />
           </div>
-        </div>
 
-        <div class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col gap-20">
-          <div class="flex flex-col gap-4 text-[#3b90e5]">
-            <h4 class="text-4xl font-bold">Análise e Gerenciamento</h4>
-            <p class="text-justify">
-              Oferecemos análise de redes envolve monitoramento, segurança,
-              capacidade e gestão de incidentes para garantir desempenho e
-              identificar vulnerabilidades. E o gerenciamento inclui
-              configuração, inventário, desempenho, backup, segurança e
-              conformidade, assegurando eficiência e segurança da
-              infraestrutura. Ambos são cruciais para o funcionamento adequado
-              e proteção das redes de uma organização.
-            </p>
+          <div
+            class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col-reverse gap-20"
+          >
+            <img
+              class="--orbit w-full h-full max-w-[300px] md:max-w-[400px] relative"
+              src="public/img/vectary-texture-1.png"
+              alt="Icone de media social"
+              loading="lazy"
+            />
+            <div class="flex flex-col gap-4 text-[#3b90e5]">
+              <h4 class="text-4xl font-bold">Branding e Social Media</h4>
+              <p class="text-justify">
+                Somos especializados em Branding e Social Media, fornecendo
+                serviços para construir e promover a identidade de sua marca de
+                maneira impactante. No Branding, desenvolvemos estratégias que
+                definem a personalidade, valores e missão da sua marca, criando
+                uma presença única no mercado. Nossa equipe de Social Media se
+                dedica a ampliar o alcance da sua marca nas redes sociais,
+                implementando estratégias de conteúdo envolvente e gerenciando
+                contas para garantir uma presença ativa e interativa.
+              </p>
+            </div>
           </div>
-          <img class="--orbit w-full h-full max-w-[300px] md:max-w-[317px] relative"
-            src="public/img/vectary-texture.png" alt="imagem de analise e gerenciamento" loading="lazy" />
-        </div>
-      </section>
 
-      <section id="our-team" class="flex flex-col gap-12 bg-[#3b90e5] w-full md:py-32 py-16 px-4">
-        <h3 class="text-white font-bold text-5xl text-center">Nossa equipe</h3>
+          <div
+            class="--animation-scroll-down flex items-center justify-center md:flex-row flex-col gap-20"
+          >
+            <div class="flex flex-col gap-4 text-[#3b90e5]">
+              <h4 class="text-4xl font-bold">Análise e Gerenciamento</h4>
+              <p class="text-justify">
+                Oferecemos análise de redes envolve monitoramento, segurança,
+                capacidade e gestão de incidentes para garantir desempenho e
+                identificar vulnerabilidades. E o gerenciamento inclui
+                configuração, inventário, desempenho, backup, segurança e
+                conformidade, assegurando eficiência e segurança da
+                infraestrutura. Ambos são cruciais para o funcionamento adequado
+                e proteção das redes de uma organização.
+              </p>
+            </div>
+            <img
+              class="--orbit w-full h-full max-w-[300px] md:max-w-[317px] relative"
+              src="public/img/vectary-texture.png"
+              alt="imagem de analise e gerenciamento"
+              loading="lazy"
+            />
+          </div>
+        </section>
 
-        <div class="grid md:grid-cols-2 grid-col-1 justify-center items-center mx-auto gap-20">
-          <div class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4">
-            <img class="text-center max-w-[148px] self-center" src="public/img/profile/magnum.png"
-              alt="Foto de Perfil Magnun" loading="lazy" />
-            <span class="font-italic font-bold text-lg">Magnun</span>
-            <span class="text-sm">Comunicação e Administrativo</span>
-            <span class="text-sm">Responsável pela liderança e estratégia de comunicação da
-              empresa, gerenciar a equipe, tomar decisões estratégicas, cuidar
-              das finanças e desenvolver parcerias de negócios</span>
-            <div class="flex gap-2 items-center">
+        <section
+          id="our-team"
+          class="flex flex-col gap-12 bg-[#3b90e5] w-full md:py-32 py-16 px-4"
+        >
+          <h3 class="text-white font-bold text-5xl text-center">
+            Nossa equipe
+          </h3>
+
+          <div
+            class="grid md:grid-cols-2 grid-col-1 justify-center items-center mx-auto gap-20"
+          >
+            <div
+              class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4"
+            >
+              <img
+                class="text-center max-w-[148px] self-center"
+                src="public/img/profile/magnum.png"
+                alt="Foto de Perfil Magnun"
+                loading="lazy"
+              />
+              <span class="font-italic font-bold text-lg">Magnun</span>
+              <span class="text-sm">Comunicação e Administrativo</span>
+              <span class="text-sm"
+                >Responsável pela liderança e estratégia de comunicação da
+                empresa, gerenciar a equipe, tomar decisões estratégicas, cuidar
+                das finanças e desenvolver parcerias de negócios</span
+              >
+              <!-- <div class="flex gap-2 items-center">
               <a href="#"><img src="public/img/social-icons/linkedin.svg" /></a>
               <a href="#"><img src="public/img/social-icons/facebook.svg" /></a>
-              <a href="#"><img src="public/img/social-icons/twitter.svg" /></li>
-
-            </d>
-          </div>
-
-          <div class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4">
-            <img class="text-center max-w-[148px] self-center" src="public/img/profile/matheus.png"
-              alt="Foto de Perfil Magnun" loading="lazy" />
-            <span class="font-italic font-bold text-lg">Matheus Mesquita</span>
-            <span class="text-sm">Designer e inovação</span>
-            <span class="text-sm">Responsável pelo design criativo e impulsionar a inovação em uma empresa. Gerencia
-              projetos de design, acompanha tendências, realizar testes e desenvolver a identidade visual da
-              empresa.</span>
-            <ul class="flex gap-2 items-center">
-              <li><a href="#"><img src="public/img/social-icons/linkedin.svg" /></a></li>
-              <li><a href="#"><img src="public/img/social-icons/behance.svg" /></a></li>
-              <li><a href="#"><img src="public/img/social-icons/twitter.svg" /></a></li>
-
-            </ul>
-          </div>
-
-          <div class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4">
-            <img class="text-center max-w-[148px] self-center" src="public/img/profile/flavio.png"
-              alt="Foto de Perfil Magnun" loading="lazy" />
-            <span class="font-italic font-bold text-lg">Flávio Leonardo</span>
-            <span class="text-sm">Desenvolvedor de software e designer</span>
-            <span class="text-sm">responsável pelo processo de programação, gerenciamento de equipe, tomada de decisões
-              estratégicas, garantia de qualidade e gestão de recursos. </span>
-            <ul class="flex gap-2 items-center">
-              <li><a href="#"><img src="public/img/social-icons/linkedin.svg" /></a></li>
-              <li><a href="#"><img src="public/img/social-icons/behance.svg" /></a></li>
-              <li><a href="#"><img src="public/img/social-icons/github.svg" /></a></li>
-
-            </ul>
-          </div>
-
-          <div class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4">
-            <img class="text-center max-w-[148px] self-center" src="public/img/profile/rodrigo.png"
-              alt="Foto de Perfil Magnun" loading="lazy" />
-            <span class="font-italic font-bold text-lg">Rodrigo Rodrigues</span>
-            <span class="text-sm">Desenvolvedor de software</span>
-            <span class="text-sm">Responsável pelo desenvolvimento da lógica e funcionalidade dos servidores e sistemas
-              de software. Responsável pela programação, gerenciamento de dados, segurança, integração de serviços,
-              colaboração em equipe e otimização do desempenho.</span>
-            <ul class="flex gap-2 items-center">
-              <li><a href="#"><img src="public/img/social-icons/linkedin.svg" /></a></li>
-              <li><a href="#"><img src="public/img/social-icons/github.svg" /></a></li>
-
-            </ul>
-          </div>
-
-      </section>
-
-      <section id="projects" class="flex flex-col gap-12 w-full md:py-40 py-16 px-4 gap-20">
-        <div class="font-bold text-5xl text-center text-[#3b90e5]">Projetos</div>
-
-        <div class="flex flex-wrap justify-center align-center mx-auto md:gap-32 gap-0">
-          <div class="flex flex-col justify-center text-center">
-            <img class="w-full max-w-[400px]" src="public/img/webdesigner.gif" alt="gif websites" />
-            <p class="text-[#3b90e5] text-lg font-bold">Websites</p>
-            <a href="#projects-designer"
-              class="bg-[#3b90e5] px-[56px] py-[9px] text-white font-bold my-8 max-w-[200px] mx-auto">
-              VER MAIS
-            </a>
-          </div>
-
-          <div class="flex flex-col justify-center text-center">
-            <img class="https-lottiefiles" src="public/img/designer.gif" alt="gif designers" />
-            <span class="text-[#3b90e5] text-lg font-bold">Designers</span>
-            <a class="bg-[#3b90e5] px-[56px] py-[9px] text-white font-bold my-8 max-w-[200px] mx-auto">
-              VER MAIS
-            </a>
-          </div>
-      </section>
-
-      <section id="projects-designer" class="flex flex-col items-center bg-[#3b90e5] py-40 w-full gap-8">
-        <div class="text-white font-bold text-5xl text-center" id="projects-designer">Designers</div>
-        <p class="text-center text-white text-2xl -mt-3">
-          Nossos projetos como social media
-        </p>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 152.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 154.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 156.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 159.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 160.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 161.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 162.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 163.png" alt="Instagram image carrossel" />
-            </div>
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 164.png" alt="Instagram image carrossel" />
+              <a href="#"><img src="public/img/social-icons/twitter.svg" /></a>
+              <a href="#"><img src="public/img/social-icons/instagram.svg" /> </a>
+             </div> -->
             </div>
 
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 165.png" alt="Instagram image carrossel" />
+            <div
+              class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4"
+            >
+              <img
+                class="text-center max-w-[148px] self-center"
+                src="public/img/profile/matheus.png"
+                alt="Foto de Perfil Magnun"
+                loading="lazy"
+              />
+              <span class="font-italic font-bold text-lg"
+                >Matheus Mesquita</span
+              >
+              <span class="text-sm">Designer e inovação</span>
+              <span class="text-sm"
+                >Responsável pelo design criativo e impulsionar a inovação em
+                uma empresa. Gerencia projetos de design, acompanha tendências,
+                realizar testes e desenvolver a identidade visual da
+                empresa.</span
+              >
+              <div class="flex gap-2 items-center">
+                <a href="https://www.linkedin.com/in/matheusrmesquita/">
+                  <img
+                    src="public/img/social-icons/linkedin.svg"
+                    alt="icon_linkedin"
+                /></a>
+                <a href="https://www.behance.net/matheusrmesquita">
+                  <img
+                    src="public/img/social-icons/behance.svg"
+                    alt="icon_facebook"
+                /></a>
+              </div>
             </div>
 
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 166.png" alt="Instagram image carrossel" />
+            <div
+              class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4"
+            >
+              <img
+                class="text-center max-w-[148px] self-center"
+                src="public/img/profile/flavio.png"
+                alt="Foto de Perfil Magnun"
+                loading="lazy"
+              />
+              <span class="font-italic font-bold text-lg">Flávio Leonardo</span>
+              <span class="text-sm">Desenvolvedor de software e designer</span>
+              <span class="text-sm"
+                >responsável pelo processo de programação, gerenciamento de
+                equipe, tomada de decisões estratégicas, garantia de qualidade e
+                gestão de recursos.
+              </span>
+              <div class="flex gap-2 items-center">
+                <a href="https://www.linkedin.com/in/leo-front-end/">
+                  <img
+                    src="public/img/social-icons/linkedin.svg"
+                    alt="icon_linkedin"
+                /></a>
+                <a href="https://www.behance.net/flavioleonardo">
+                  <img
+                    src="public/img/social-icons/behance.svg"
+                    alt="icon_facebook"
+                /></a>
+                <a href="https://github.com/LeonardoMachado30"
+                  ><img
+                    src="public/img/social-icons/github.svg"
+                    alt="icon_instagram"
+                  />
+                </a>
+              </div>
             </div>
 
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 167.png" alt="Instagram image carrossel" />
-            </div>
+            <div
+              class="--animation-scroll-down flex flex-col text-white max-w-[400px] gap-4"
+            >
+              <img
+                class="text-center max-w-[148px] self-center"
+                src="public/img/profile/rodrigo.png"
+                alt="Foto de Perfil Magnun"
+                loading="lazy"
+              />
+              <span class="font-italic font-bold text-lg"
+                >Rodrigo Rodrigues</span
+              >
+              <span class="text-sm">Desenvolvedor de software</span>
+              <span class="text-sm"
+                >Responsável pelo desenvolvimento da lógica e funcionalidade dos
+                servidores e sistemas de software. Responsável pela programação,
+                gerenciamento de dados, segurança, integração de serviços,
+                colaboração em equipe e otimização do desempenho.</span
+              >
 
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 168.png" alt="Instagram image carrossel" />
-            </div>
-
-            <div class="swiper-slide">
-              <img src="public/img/instagram/Group 174.png" alt="Instagram image carrossel" />
+              <div class="flex gap-2 items-center">
+                <a href="https://github.com/RodrigodevChagas">
+                  <img
+                    src="public/img/social-icons/github.svg"
+                    alt="icon_instagram"
+                  />
+                </a>
+              </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <a href="#" class="!bg-white !text-[#3b90e5] px-[56px] py-[9px] text-white font-bold my-8">
-          Fale conosco
-        </a>
-      </section>
+        </section>
 
-      <section id="projects-website" class="flex flex-col gap-10 h-screen py-24">
-        <div class="text-[#3b90e5] font-bold text-5xl text-center" id="projects-designer">Websites</div>
+        <section
+          id="projects"
+          class="flex flex-col gap-12 w-full md:py-40 py-16 px-4 gap-20"
+        >
+          <h3 class="font-bold text-5xl text-center text-[#3b90e5]">
+            Projetos
+          </h3>
 
-        <div class="flex justiy-center items-center gap-12">
-          <a href="escoladepericiamedica.com.br"><img src="public/img/escoladepericiamedica-website.png" />
+          <div
+            class="flex flex-wrap justify-center align-center mx-auto md:gap-32 gap-0"
+          >
+            <div class="flex flex-col justify-center text-center">
+              <img
+                class="w-full max-w-[400px]"
+                src="public/img/webdesigner.gif"
+                alt="gif websites"
+              />
+              <p class="text-[#3b90e5] text-lg font-bold">Websites</p>
 
+              <a
+                href="#projects-designer"
+                class="bg-[#3b90e5] px-[56px] py-[9px] text-white font-bold my-8 max-w-[200px] mx-auto"
+              >
+                VER MAIS
+              </a>
+            </div>
+
+            <div class="flex flex-col justify-center text-center">
+              <img
+                class="https-lottiefiles"
+                src="public/img/designer.gif"
+                alt="gif designers"
+              />
+              <span class="text-[#3b90e5] text-lg font-bold">Designers</span>
+
+              <a
+                class="bg-[#3b90e5] px-[56px] py-[9px] text-white font-bold my-8 max-w-[200px] mx-auto"
+              >
+                VER MAIS
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="projects-designer"
+          class="flex flex-col items-center bg-[#3b90e5] py-40 w-full gap-8"
+        >
+          <div
+            class="text-white font-bold text-5xl text-center"
+            id="projects-designer"
+          >
+            Designers
+          </div>
+          <p class="text-center text-white text-2xl -mt-3">
+            Nossos projetos como social media
+          </p>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 152.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 154.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 156.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 159.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 160.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 161.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 162.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 163.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 164.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 165.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 166.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 167.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 168.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="public/img/instagram/Group 174.png"
+                  alt="Instagram image carrossel"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <a
+            href="#"
+            class="!bg-white !text-[#3b90e5] px-[56px] py-[9px] text-white font-bold my-8"
+          >
+            Fale conosco
           </a>
-          <a href="escoladepericiamedica.com.br"><img src="public/img/kitpórta-website.png" /></a>
+        </section>
+
+        <section id="projects-website" class="flex flex-col gap-10 py-24">
+          <div
+            class="text-[#3b90e5] font-bold text-5xl text-center"
+            id="projects-designer"
+          >
+            Websites
+          </div>
+
+          <div class="flex flex-wrap justiy-center items-center gap-12">
+            <a href="https://escoladepericiamedica.com.br">
+              <img
+                src="public/img/escoladepericiamedica-website.png"
+                alt="Escola de pericia medica"
+              />
+            </a>
+            <a href="https://kitportas.com.br">
+              <img src="public/img/kitpórta-website.png" alt="kit portas" />
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="flex bg-[#3b90e5] text-white w-full py-8 px-4">
+        <div
+          class="flex flex-wrap md:items-center md:justify-around max-w-[900px] w-full mx-auto h-full"
+        >
+          <ul class="flex flex-col gap-2 p-2 text-lg self-start">
+            <li class="font-bold"><a href="#main">Inicio</a></li>
+            <li class="font-bold">
+              <a href="#our-services">Nossos serviços</a>
+            </li>
+            <li class="font-bold"><a href="#our-team">Nossa equipe</a></li>
+            <li class="font-bold"><a href="#projects">Nossos produtos</a></li>
+          </ul>
+
+          <p
+            class="text-white text-md text-center order-last md:order-none self-end"
+          >
+            Todos os direitos reservados a
+            <strong>DVX Tecnologias e Soluções</strong>
+          </p>
+
+          <div class="flex gap-2 items-center p-4 h-full self-start">
+            <a href="/asd">
+              <img
+                src="public/img/social-icons/linkedin.svg"
+                alt="icon_linkedin"
+              />
+            </a>
+            <a href="/asd">
+              <img
+                src="public/img/social-icons/facebook.svg"
+                alt="icon_facebook"
+              />
+            </a>
+            <a href="/asd">
+              <img
+                src="public/img/social-icons/instagram.svg"
+                alt="icon_instagram"
+              />
+            </a>
+          </div>
         </div>
+      </footer>
+    </div>
 
-      </section>
-    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <footer class="bg-[#3b90e5] text-white w-full py-8">
-      <div class="flex items-center justify-around max-w-[900px] w-full mx-auto h-full">
-        <ul class="flex flex-col gap-2 p-2 text-lg self-start">
-          <li class="font-bold"><a href="#main">Inicio</a></li>
-          <li class="font-bold"><a href="#our-services">Nossos serviços</a></li>
-          <li class="font-bold"><a href="#our-team">Nossa equipe</a></li>
-          <li class="font-bold"><a href="#projects">Nossos produtos</a></li>
-        </ul>
+    <script src="public/js/orbitEffect.js" type="module"></script>
 
-        <p class="text-white text-md self-end">
-          Todos os direitos reservados a <strong>DVX Tecnologias e Soluções</strong>
-        </p>
-
-        <ul class="flex gap-2 items-center p-4 h-full self-start">
-          <li><a href="#"><img src="public/img/social-icons/linkedin.svg" /></a></li>
-          <li><a href="#"><img src="public/img/social-icons/facebook.svg" /></a></li>
-          <li><a href="#"><img src="public/img/social-icons/twitter.svg" /></a></li>
-
-        </ul>
-      </div>
-
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script src="public/js/orbitEffect.js" type="module"></script>
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      loop: true,
-      keyboard: {
-        enabled: true,
-      },
-      autoplay: {
-        delay: 8000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        keyboard: {
+          enabled: true,
         },
-        "@0.75": {
-          slidesPerView: 2,
-          spaceBetween: 20,
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
         },
-        "@1.00": {
-          slidesPerView: 3,
-          spaceBetween: 40,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-        "@1.50": {
-          slidesPerView: 4,
-          spaceBetween: 50,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-
-      },
-    });
-  </script>
-
-
-</body>
-
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
