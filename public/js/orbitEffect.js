@@ -11,7 +11,7 @@ let particlePositions;
 let linesMesh;
 
 const maxParticleCount = 1000;
-let particleCount = 500;
+let particleCount = 200;
 const r = 800;
 const rHalf = r / 2;
 
